@@ -3,7 +3,7 @@ import 'dart:async';
 
 Stream<int> returnNumbers() async* {
   for (int i=0; i<10; i++) {
-    await Future.delayed(Duration(seconds: i));
+    await Future.delayed(Duration(seconds: 1));
     yield i;
   }
 }
